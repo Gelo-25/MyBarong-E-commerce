@@ -1,0 +1,191 @@
+.save-items-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 24px 80px;
+}
+
+.save-items-hero {
+  margin-bottom: 40px;
+}
+
+.save-items-breadcrumb {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #8B8176;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.save-items-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+  color: #2C221D;
+}
+
+.save-items-count {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #8B8176;
+  margin-top: 8px;
+}
+
+.save-items-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #6D6257;
+}
+
+.save-items-empty p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.save-items-cta {
+  display: inline-block;
+  background: #221915;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background .3s ease;
+}
+
+.save-items-cta:hover {
+  background: #C89443;
+}
+
+.save-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.save-item-card {
+  background: #fff;
+  border: 1px solid rgba(36, 27, 22, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.save-item-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+.save-item-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.save-item-image img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+
+.save-item-card:hover .save-item-image img {
+  transform: scale(1.03);
+}
+
+.save-item-category {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #fff;
+  color: #2C221D;
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.save-item-info {
+  padding: 24px;
+}
+
+.save-item-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #241B16;
+}
+
+.save-item-price {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #221915;
+  margin-bottom: 16px;
+}
+
+.save-item-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.save-item-view {
+  flex: 1;
+  text-align: center;
+  background: #221915;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background .3s ease;
+}
+
+.save-item-view:hover {
+  background: #C89443;
+}
+
+.save-item-remove {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(36, 27, 22, 0.15);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #2C221D;
+  transition: all .25s ease;
+}
+
+.save-item-remove:hover {
+  background: #221915;
+  color: #fff;
+}
+
+@media (max-width: 1120px) {
+  .save-items-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .save-items-page {
+    padding: 90px 16px 50px;
+  }
+
+  .save-items-hero h1 {
+    font-size: 34px;
+  }
+
+  .save-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
